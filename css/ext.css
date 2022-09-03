@@ -21,7 +21,7 @@ body {
     position: fixed;
     width: 200px;
     height: 100%;
-    background: rgb(95, 109, 185);
+    background: rgb(27, 34, 72);
     padding: 30px 0;
 }
 
@@ -29,7 +29,10 @@ body {
     color: black;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    background-color: rgb(98, 115, 210);
+    border-bottom: 2px solid #e0e4e8;
+
 }
 
 .navbar .logo ul li {
@@ -50,10 +53,10 @@ body {
 }
 
 .navbar .main .header {
-    padding: 20px;
+    padding: 18px;
     background: #fff;
     color: #717171;
-    border-bottom: 1px solid #e0e4e8;
+    border-bottom: 10px solid #e0e4e8;
     font-size: 20px;
 }
 
