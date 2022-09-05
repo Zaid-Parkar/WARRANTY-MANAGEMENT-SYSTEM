@@ -80,9 +80,27 @@ body {
     padding: 18px;
 }
 
-.navbar .main .king {
+.navbar .main  .king {
     text-align: center;
     padding-top: 100px;
     font-size: large;
+    font-family: 'Alegreya', serif;
+    font-size: large;
+    text-align: center;
+    line-height: 1.5px;
 
+}
+.main-headings{
+
+    font-family:'Alegreya', serif;
+    font-size: 42px;
+    font-weight:bolder;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.Aboutus-desc{
+padding: 20px 20px ;
+line-height: 1.5;
 }
