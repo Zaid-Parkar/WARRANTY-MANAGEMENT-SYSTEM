@@ -100,7 +100,13 @@ body {
     padding-bottom: 10px;
 }
 
-.Aboutus-desc{
+.Aboutus-desc  {
 padding: 20px 20px ;
 line-height: 1.5;
+font-size: 16px;
 }
+.Contactus-desc {
+    padding: 20px 20px ;
+    line-height: 1.5;
+    font-size: 16px;
+    }
