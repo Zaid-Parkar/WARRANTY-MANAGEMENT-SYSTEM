@@ -28,7 +28,10 @@ body {
     width: 200px;
     height: 100%;
     background: rgb(27, 34, 72);
-    padding: 30px 0;
+  
+}
+.icons{
+    margin-right: 2px;
 }
 
 .navbar .logo h2 {
