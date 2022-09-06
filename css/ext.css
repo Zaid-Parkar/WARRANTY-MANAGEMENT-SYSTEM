@@ -17,7 +17,7 @@
 }
 
 body {
-    background: white;
+    background:powderblue);
 }
 
 .navbar {
@@ -33,7 +33,7 @@ body {
   
 }
 .icons{
-    margin-right: 3px;
+    margin-right: 8px;
 }
 
 .navbar .logo h2 {
@@ -110,3 +110,38 @@ font-size: 16px;
     line-height: 1.5;
     font-size: 16px;
     }
+
+    /* Card */
+.card {
+    margin: 0 auto;
+    border: 0;
+    padding: 0;
+    width: 20%;
+  }
+  
+  .event-card {
+    margin: 0 100px;
+  }
+  
+  .event-card-padding {
+    margin-left: 10px;
+  }
+
+  .appliance-form{
+    margin: 20px 30px;
+  }
+
+  .form-group{
+    padding-top: 10px;
+  }
+  .form-desc{
+    font-size: larger;
+    font-family: 'Alegreya', serif;
+    font-weight: bold;
+    pa
+  }
+  .btn-primary{
+    margin-top: 10px;
+
+
+  }
