@@ -1,155 +1,72 @@
-<!DOCTYPE html>
 <html lang="en">
+  <head>
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/ext.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge" />
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        /* Add image */
+        background-image: url("./Images/milad-fakurian-RVM5HYqg2jA-unsplash.jpg");
+  
+        /* Make image center */
+        background-position: center center;
+  
+        /* Make image fixed */
+        background-attachment: fixed;
+  
+        /* Not repeat images */
+        background-repeat: no-repeat;
+  
+        /* Set background size auto */
+        background-size: cover;
+        z-index: -3;
+      }
+  
+     
+        }
+      }
+    </style>
+  </head>
+  <body>
 
-<head>
-  <script src="https://kit.fontawesome.com/aaec2ae779.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Warrant Management System</title>
-</head>
 
-<body>
-
-  <nav class="navbar navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">WELCOME USER</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
-        aria-controls="offcanvasDarkNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-        aria-labelledby="offcanvasDarkNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Main Menu</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-            aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-
-            <li class="nav-item">
-              <a class="nav-link" href="./dashboard.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                  fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
-                  <path
-                    d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
-                </svg> Dashboard</a>
+    <nav class="bg-black border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-black">
+      <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <a href="https://flowbite.com/" class="flex items-center">
+            <img src="./Images/brand.png" class="mr-3 h-6 sm:h-9" alt="Brand logo">
+            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">COUNT STOCK</span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-black  dark:border-gray-700">
+            <li>
+              <a href="#" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./appliance.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                  fill="currentColor" class="bi bi-robot" viewBox="0 0 16 16">
-                  <path
-                    d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5ZM3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.58 26.58 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.933.933 0 0 1-.765.935c-.845.147-2.34.346-4.235.346-1.895 0-3.39-.2-4.235-.346A.933.933 0 0 1 3 9.219V8.062Zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a24.767 24.767 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25.286 25.286 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135Z" />
-                  <path
-                    d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2V1.866ZM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5Z" />
-                </svg> Appliance</a>
+            <li>
+              <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./deadstock.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                  fill="currentColor" class="bi bi-exclamation-octagon-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                </svg>Dead Stock</a>
+            <li>
+              <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./inwarranty.html"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                  height="16" fill="currentColor" class="bi bi-file-earmark-check" viewBox="0 0 16 16">
-                  <path
-                    d="M10.854 7.854a.5.5 0 0 0-.708-.708L7.5 9.793 6.354 8.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
-                  <path
-                    d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
-                </svg>Warranty Details</a>
+            <li>
+              <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./category.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                  fill="currentColor" class="bi bi-stack" viewBox="0 0 16 16">
-                  <path
-                    d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z" />
-                  <path
-                    d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z" />
-                </svg>Category</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./aboutus.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                  fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
-                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                  <path
-                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-                </svg>About us</a>
+            <li>
+              <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
             </li>
           </ul>
         </div>
       </div>
-    </div>
-
-  </nav>
-  <div class="dashboard-card flex">
-    <div class=" flex justify-center p-5">
-      <div class="mt-20 rounded-lg shadow-lg bg-white max-w-sm ">
-        <a class="flex justify-center" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
-          <img class="rounded-lg h-20 w-20  " src="./reusable.jpg" alt="" />
-        </a>
-        <div class="p-3">
-          <h5 class="text-gray-900 text-xl font-medium mb-2">Dead Stock</h5>
-          <p class="text-gray-700 text-base mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua
-          </p>
-          <button type="button"
-            class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>
-        </div>
-      </div>
-    </div>
-
-    <div class=" flex justify-center p-5">
-      <div class="mt-20 rounded-lg shadow-lg bg-white max-w-sm ">
-        <a class="flex justify-center" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
-          <img class="rounded-lg h-20 w-20  " src="./reusable.jpg" alt="" />
-        </a>
-        <div class="p-3">
-          <h5 class="text-gray-900 text-xl font-medium mb-2">Reusable</h5>
-          <p class="text-gray-700 text-base mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua
-          </p>
-          <button type="button"
-            class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>
-        </div>
-      </div>
-    </div>
-
-    <div class=" flex justify-center p-5">
-      <div class="mt-20 rounded-lg shadow-lg bg-white max-w-sm ">
-        <a class="flex justify-center" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
-          <img class="rounded-lg h-20 w-20  " src="./reusable.jpg" alt="" />
-        </a>
-        <div class="p-3">
-          <h5 class="text-gray-900 text-xl font-medium mb-2">Not Reusable</h5>
-          <p class="text-gray-700 text-base mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua
-          </p>
-          <button type="button"
-            class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <footer class="text-center text-white fixed-bottom" style="background-color: #212529;">
-    <div class="text-center p-2" style="background-color: #212529;">
-      All rights reserved copyright © 2022
-    </div>
-  </footer>
-
-</body>
-
+    </nav>
+    
+   
+  </body>
 </html>
