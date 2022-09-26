@@ -7,3 +7,13 @@
     text-align: center;
     margin:0 auto;
 }
+
+.main-desc{
+    margin-top: 10%;
+    padding-left: 50px;
+ 
+}
+.text-desc{
+    text-align: left;
+    font-size: 50px;
+}
