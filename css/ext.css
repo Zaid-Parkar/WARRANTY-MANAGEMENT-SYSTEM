@@ -1,23 +1,25 @@
+.navm {
 
-
-
-
-.navm{
-  
     text-align: center;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-.main-desc{
+.main-desc {
     margin-top: 10%;
     padding-left: 50px;
- 
+
 }
-.text-desc{
+
+.text-desc {
     text-align: left;
     font-size: 50px;
 }
 
-.body-dashboard{
+.body-dashboard {
     background-color: hsl(0, 0%, 98%)
+}
+
+.card {
+    text-align: center;
+
 }
