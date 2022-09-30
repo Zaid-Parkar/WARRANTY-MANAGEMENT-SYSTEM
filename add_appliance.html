@@ -1,103 +1,90 @@
+<!DOCTYPE html>
 <html lang="en">
 
-<head>
-
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <head>
+    <link rel="icon" href="./images/brand.ico">
     <link rel="stylesheet" href="./css/ext.css">
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS only -->
 
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Appliance</title>
+  </head>
 
-<body>
+  <body>
+
+    <body class="body-dashboard">
 
 
-    <nav class="bg-none border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-transparent">
+      <nav class="bg-none border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-black">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
-            <a href="./index.html" class="flex items-center">
-                <img src="./Images/brand.png" class="mr-3 h-6 sm:h-9" alt="Brand logo">
-                <span class="self-center text-3xl font-bold whitespace-nowrap dark:text-white ">COUNT STOCK</span>
-            </a>
-          
+          <a href="./index.html" class="flex items-center">
+            <img src="./Images/brand.png" class="mr-3 h-6 sm:h-9" alt="Brand logo">
+            <span class="self-center text-3xl font-bold whitespace-nowrap dark:text-white ">COUNT STOCK</span>
+
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul
-                    class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-transparent  dark:border-gray-700">
-                    <li>
-                        <a href="./index.html"
-                            class="block py-2 pr-4 pl-3 text-xl text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 dark:text-white"
-                            aria-current="page">Home</a>
-                    </li>
-                    <li>
-                        <a href="./About_team.html"
-                            class="block py-2 pr-4 pl-3 text-xl text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
-                    </li>
-                    <li>
-                        <a href="./FEATURES.HTML"
-                            class="block py-2 pr-4 pl-3 text-xl  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Features</a>
-                    </li>
-                    <li>
-                        <a href="./contactus.html"
-                            class="block py-2 pr-4 pl-3 text-xl text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact
-                            us</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Zaid-Parkar/WARRANTY-MANAGEMENT-SYSTEM"
-                            class="block py-2 pr-4 pl-3 text-xl text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">GitHub
-                            Project</a>
-                    </li>
-                </ul>
+              <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-transparent  dark:border-gray-700">
+                <li>
+                  <a href="./choosepage.html" class="block py-2 pr-4 pl-3 text-xl text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 dark:text-white" aria-current="page">Main page</a>
+                </li>
+
+              </ul>
             </div>
         </div>
-    </nav>
-    <div class="appliance-form mt-20 pl-5">
-        <h1 class=" mb-10 font-bold font-serif text-4xl">APPLIANCE DETAILS</h1>
-    </div>
-    <form class="appliance-form mt-1 pl-5 col-3">
-        <div class="form-group  ">
-            <label for="exampleInputEmail1" class="form-desc">Product Name</label>
-            <input type="text" class="form-control" id="PName" name="Product Name" aria-describedby="emailHelp"
-                placeholder="Enter product">
+      </nav>
+
+      <div class="appliance-form mt-20 pl-5 justify-content-center ">
+        <h1 class=" mb-0 font-bold font-serif text-4xl text-center">APPLIANCE DETAILS</h1>
+      </div>
+      <div class="relative flex flex-col justify-center pt-10 overflow-hidden ">
+        <div class="w-full p-6 m-auto bg-white border-t-4 border-purple-600 rounded-md shadow-md border-top lg:max-w-md">
+          <form action="./login.html" class=" mt-1 pl-5 col-3 flex m-auto">
+            <div class="mt-4">
+              <div>
+                <label class="block" for="Name">Appliance name<label>
+                    <input type="text" placeholder="Name" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
+              </div>
+              
+              <div>
+                <label class="block" for="Name">Date of purchase<label>
+                    <input type="date" placeholder="Name" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
+              </div>
+              
+              <div>
+                <label class="block" for="Name">Warranty details<label>
+                    <input type="text" placeholder="Name" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
+              </div>
+
+              <div>
+                <label class="block" for="Name">Brand<label>
+                    <input type="text" placeholder="Name" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
+              </div>
+
+              <div>
+                <label class="block" for="Name">Category<label>
+                    <input type="text" placeholder="Name" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
+              </div>
+                <button class="w-full px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900">Add Appliance Details</button>
+              </div>
+             
+              
+            </div>
+        </div>
+      </div>
+      </form>
+
+
+
+      <footer class="text-center bg-black-200 text-white   fixed inset-x-0 bottom-0">
+
+
+
+        <div class="text-center pb-3 pt-3" style="background-color:black;">
+          © 2022 Copyright:
+          <a class="text-white" href="https://tailwind-elements.com/">Count Stock </a>
         </div>
 
-        <div class="form-group pt-3">
-            <label for="exampleInputPassword1" class="form-desc ">Warranty Details</label>
-            <input type="text" class="form-control" id="Wdtails" name="Warranty Details" placeholder="Warrantydetails">
-        </div>
+      </footer>
+    </body>
 
-        <div class="form-group pt-3">
-            <label for="exampleInputPassword1" class="form-desc">Date of purchase</label>
-            <input type="text" class="form-control" id="DOP" name="Date of purchase" placeholder="date of purchase">
-        </div>
-
-        <div class="form-group pt-3">
-            <label for="exampleInputPassword1" class="form-desc">Brand</label>
-            <input type="text" class="form-control" id="BName" name="Brand" placeholder="Brand name">
-        </div>
-        <div class="form-group form-check pt-3">
-            <label for="exampleInputPassword1" class="form-desc">Category</label><br>
-
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1 pt-3" id="cat" name="Category">Reusable</label>
-        </div>
-
-        <div class="form-group form-check pt-3">
-
-
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1 pt-3" id="cat">Not Reusable</label>
-        </div>
-        <div class="form-group form-check pt-3">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1 pt-3" id="check" name="Check me out">Check me out</label>
-        </div>
-
-        <button
-            class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Submit</button>
-
-    </form>
-</body>
+</html>
