@@ -1,108 +1,114 @@
 <html lang="en">
 
 <head>
-  <link rel="icon"  href="./images/brand.ico">
-    <link rel="stylesheet" href="./css/ext.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./css/ext.css">
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main page</title>
-    <style>
-        
-        
-    </style>
+  <link rel="icon" href="./images/brand.ico">
+  <link rel="stylesheet" href="./css/ext.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/ext.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Main page</title>
+  <style>
+
+
+  </style>
 
 </head>
 
 <body class="body-dashboard">
 
 
-    <nav class="bg-none border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-black">
-      <div class="container flex flex-wrap justify-between items-center mx-auto">
-        <a href="./index.html" class="flex items-center">
-          <img src="./Images/brand.png" class="mr-3 h-6 sm:h-9" alt="Brand logo">
-          <span class="self-center text-3xl font-bold whitespace-nowrap dark:text-white ">COUNT STOCK</span>
+  <nav class="bg-none border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-black">
+    <div class="container flex flex-wrap justify-between items-center mx-auto">
+      <a href="./index.html" class="flex items-center">
+        <img src="./Images/brand.png" class="mr-3 h-6 sm:h-9" alt="Brand logo">
+        <span class="self-center text-3xl font-bold whitespace-nowrap dark:text-white ">COUNT STOCK</span>
+      </a>
+      <p
+        class=" py-2 pr-4 pl-3 justify-content-center text-xl font-bold text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 dark:text-white ">
+        Welcome User</p>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+
+        <ul
+          class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-transparent  dark:border-gray-700">
+
+
+
+          <li>
+            <a href="./index.html"
+              class="block py-2 pr-4 pl-3 text-xl text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 dark:text-white"
+              aria-current="page">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="cards flex justify-center cardlog p-5 ">
+    <div class=" flex justify-center p-5">
+      <div class=" rounded-lg shadow-lg bg-white max-w-sm ">
+        <a class="flex justify-center" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+          <img class="rounded-lg h-20 w-70 m-1 " src="./Images/box.png" alt="" />
         </a>
-        <p class=" py-2 pr-4 pl-3 justify-content-center text-xl font-bold text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 dark:text-white " >Welcome User</p>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          
-          <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-transparent  dark:border-gray-700">
-            
-            
-            
-            <li>
-              <a href="./index.html" class="block py-2 pr-4 pl-3 text-xl text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 dark:text-white" aria-current="page">Home</a>
-            </li>
-          </ul>
+        <div class="p-3">
+          <h5 class="text-gray-900 text-xl font-medium mb-2">Add Appliance</h5>
+          <p class="text-gray-700 text-base mb-4">
+            Click here to add any new Appliance
+
+          </p>
+          <a href="./add_appliance.html"> <button type="button"
+              class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Add</button></a>
         </div>
       </div>
-    </nav>
-
-   
-
-    <div class="cards flex justify-center cardlog p-5 ">
-        <div class=" flex justify-center p-5">
-            <div class=" rounded-lg shadow-lg bg-white max-w-sm ">
-                <a class="flex justify-center" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
-                    <img class="rounded-lg h-20 w-70 m-1 " src="./Images/box.png" alt="" />
-                </a>
-                <div class="p-3">
-                    <h5 class="text-gray-900 text-xl font-medium mb-2">Add Appliance</h5>
-                    <p class="text-gray-700 text-base mb-4">
-                        Click here to add any new Appliance
-
-                    </p>
-                    <a href="./add_appliance.html"> <button type="button"
-                            class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Add</button></a>
-                </div>
-            </div>
 
 
+    </div>
+    <div class=" flex justify-center p-5  ">
+      <div class=" rounded-lg shadow-lg bg-white max-w-sm ">
+        <a class="flex justify-center" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+          <img class="rounded-lg h-20 w-70 m-1 " src="./Images/house.png" alt="" />
+        </a>
+        <div class="p-3">
+          <h5 class="text-gray-900 text-xl font-medium mb-2">Set Reminder</h5>
+          <p class="text-gray-700 text-base mb-4">
+            Dont let your Warrantyget expired!!
+          </p>
+          <a href="./reminder.html"> <button type="button"
+              class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Set</button></a>
         </div>
-        <div class=" flex justify-center p-5 ">
-            <div class=" rounded-lg shadow-lg bg-white max-w-sm ">
-                <a class="flex justify-center" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
-                    <img class="rounded-lg h-20 w-70 m-1 " src="./Images/house.png" alt="" />
-                </a>
-                <div class="p-3">
-                    <h5 class="text-gray-900 text-xl font-medium mb-2">Full Report</h5>
-                    <p class="text-gray-700 text-base mb-4">
-                        Click here to view Appliance Full Report
-                    </p>
-                    <a href="./display.php"> <button type="button"
-                      class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Add</button></a>
-           </div>
-            </div>
+      </div>
+    </div>
+    <div class=" flex justify-center p-5 ">
+      <div class=" rounded-lg shadow-lg bg-white max-w-sm ">
+        <a class="flex justify-center" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+          <img class="rounded-lg h-20 w-70 m-1 " src="./Images/house.png" alt="" />
+        </a>
+        <div class="p-3">
+          <h5 class="text-gray-900 text-xl font-medium mb-2">Full Report</h5>
+          <p class="text-gray-700 text-base mb-4">
+            Click here to view Appliance Full Report
+          </p>
+          <a href="./display.php"> <button type="button"
+              class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">View</button></a>
         </div>
-
-        <div class=" flex justify-center p-5  ">
-          <div class=" rounded-lg shadow-lg bg-white max-w-sm ">
-              <a class="flex justify-center" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
-                  <img class="rounded-lg h-20 w-70 m-1 " src="./Images/house.png" alt="" />
-              </a>
-              <div class="p-3">
-                  <h5 class="text-gray-900 text-xl font-medium mb-2">Add Reminder</h5>
-                  <p class="text-gray-700 text-base mb-4">
-                     Dont let your Warrantyget expired!!
-                  </p>
-                  <a href="./reminder.html"> <button type="button"
-                    class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Add</button></a>
-         </div>
-          </div>
       </div>
     </div>
 
 
-
-    <footer class="text-center bg-black-200 text-white   fixed inset-x-0 bottom-0">
-
+  </div>
 
 
-        <div class="text-center pb-3 pt-3" style="background-color:black;">
-          © 2022 Copyright:
-          <a class="text-white" href="https://tailwind-elements.com/">Count Stock </a>
-        </div>
-  
-      </footer>
+
+  <footer class="text-center bg-black-200 text-white   fixed inset-x-0 bottom-0">
+
+
+
+    <div class="text-center pb-3 pt-3" style="background-color:black;">
+      © 2022 Copyright:
+      <a class="text-white" href="https://tailwind-elements.com/">Count Stock </a>
+    </div>
+
+  </footer>
